@@ -21,7 +21,8 @@ def check_availbility(country)
            "China" => "http://store.apple.com/cn/browse/home/shop_iphone/family/iphone/iphone4s",
            "HK" => "http://store.apple.com/hk/browse/home/shop_iphone/family/iphone",
            "US" => "http://store.apple.com/us/browse/home/shop_iphone/family/iphone",
-           "CA" => "http://store.apple.com/ca/browse/home/shop_iphone/family/iphone"
+           "CA" => "http://store.apple.com/ca/browse/home/shop_iphone/family/iphone",
+           "SG" => "http://store.apple.com/sg/browse/home/shop_iphone/family/iphone",
           } 
   
   message, title = ""
@@ -66,8 +67,7 @@ def check_availbility(country)
 end
 
 while true 
-  #["China", "HK"].each { |country| check_availbility(country) }
-  ["HK", "US", "CA"].each { |country| check_availbility(country) }
+  ["HK","SG"].each { |country| check_availbility(country) }
   #sleep(300)
   sleep(5)
 end 
